@@ -10,14 +10,6 @@
   </head>
   <body>
     <header>
-    </header>
-    <main>
-      <div class="base-container">
-        <%= yield %>
-      </div>
-    </main>
-    <footer>
-    </footer>
     <% if user_signed_in? %>
       <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
     <% else %>
@@ -25,5 +17,12 @@
       <%= link_to "ログイン", new_user_session_path %>
     <% end %>
     <%= yield %>
+    </header>
+    <main>
+      <div class="base-container">
+      </div>
+    </main>
+    <footer>
+    </footer>
   </body>
 </html>
