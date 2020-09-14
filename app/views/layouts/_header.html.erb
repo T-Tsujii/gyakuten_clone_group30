@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+  <span class="navbar-brand">やんばるCODE</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <div class="nav-item dropdown">
+        <%= link_to "Rails", "#",  class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLink", role: "button", data: { toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" } %>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <%= link_to "Ruby/Rails", "#",  class: "dropdown-item" %>
+            <%= link_to "動画教材", "/movies",  class: "dropdown-item" %>
+            <%= link_to "AWS講座", "#",  class: "dropdown-item" %>
+            <%= link_to "ライブコーディング", "#",  class: "dropdown-item" %>
+            <%= link_to "質問集", "#",  class: "dropdown-item" %>
+          </div>
+      </div>
+      <%= link_to "対談", "#", class: "nav-item nav-link active" %>
+      <%= link_to "情報発信", "#", class: "nav-item nav-link active" %>
+      <%= link_to "ライティング講座", "#", class: "nav-item nav-link active"%>
+      <%= link_to "マネタイズ講座", "#", class: "nav-item nav-link active"%>
+      <%= link_to "PHP", "#", class: "nav-item nav-link active"%>
+      <%= link_to "LINE＠", "#", class: "nav-item nav-link active"%>
+      <% if user_signed_in? %>
+        <%= link_to "アカウント編集", "#", class: "nav-item nav-link active"%>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-item nav-link active" %>
+      <% else %>
+        <%= link_to "ログイン", new_user_session_path, class: "nav-item nav-link active"%> 
+        <%= link_to "新規登録", new_user_registration_path, class: "nav-item nav-link active"%>
+      <% end %>
+    </div>
+  </div>
+</nav>
