@@ -11,3 +11,5 @@ class Import
     list
   end
 end
+
+Import.csv_data(path: "db/csv_data/aws_text_data.csv")
