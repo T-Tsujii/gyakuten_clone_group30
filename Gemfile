@@ -34,3 +34,5 @@ gem 'devise'
 # support japanese
 gem 'rails-i18n'
 gem 'devise-i18n'
+
+gem 'devise-bootstrap-views'
