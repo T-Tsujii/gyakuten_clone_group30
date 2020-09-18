@@ -10,10 +10,6 @@
   padding: 1rem;
 }
 
-.container-fluid{
-  max-width: 576px;
-  padding: 3rem;
-
 body {
   padding-top: 56px;
 }
@@ -23,4 +19,9 @@ body {
 }
 .alert-alert {
   @extend .alert-danger;
+} 
+
+.container-fluid{
+  max-width: 576px;
+  padding: 3rem;
 }
