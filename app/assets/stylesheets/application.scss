@@ -19,4 +19,10 @@ body {
 }
 .alert-alert {
   @extend .alert-danger;
+} 
+
+.container-login{
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
 }
