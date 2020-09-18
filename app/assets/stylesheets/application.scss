@@ -21,7 +21,8 @@ body {
   @extend .alert-danger;
 } 
 
-.container-fluid{
+.container-login{
+  @extend .container-fluid;
   max-width: 576px;
-  padding: 3rem;
+  padding: 2rem;
 }
