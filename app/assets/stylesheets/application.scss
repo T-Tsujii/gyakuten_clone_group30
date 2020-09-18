@@ -13,4 +13,14 @@
 .container-fluid{
   max-width: 576px;
   padding: 3rem;
+
+body {
+  padding-top: 56px;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}
+.alert-alert {
+  @extend .alert-danger;
 }
