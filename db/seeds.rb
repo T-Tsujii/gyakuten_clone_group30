@@ -1,5 +1,7 @@
 EMAIL = 'test@example.com'
 PASSWORD = 'password'
+ADMIN_EMAIL = 'test@example.com'
+ADMIN_PASSWORD = 'password'
 
 #テストユーザ存在しない場合のみ作成
 User.find_or_create_by!(email: EMAIL) do |user|
@@ -7,4 +9,7 @@ User.find_or_create_by!(email: EMAIL) do |user|
   puts 'ユーザの初期データインポートに成功しました。'
 end
 
-AdminUser.find_or_create_by!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.find_or_create_by!(email: ADMIN_EMAIL) do |user|
+  user.password = ADMIN_PASSWORD
+  puts '管理者ユーザの初期データインポートに成功しました。'
+end
