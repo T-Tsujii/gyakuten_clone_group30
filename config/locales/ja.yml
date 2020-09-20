@@ -2,21 +2,17 @@
 ja:
   activerecord:
     models:
-      AdminUser: "管理者"
-      AwsText: "AWSテキスト"
-      Movie: "動画"
+      admin_user: "管理者"
+      aws_text: "AWSテキスト"
+      movie: "動画"
     attributes:
-      AdminUser:
-        email: "Eメール"
-        current_sign_in_at: "最新ログイン日時"
-        sign_in_count: "ログイン回数"
-        created_at: "作成日時"
-      AwsText:
+      admin_user: &user
+      aws_text:
         title: "タイトル"
         content: "コンテンツ"
         created_at: "作成日時"
         updated_at: "更新日時"
-      Movie:
+      movie:
         title: "タイトル"
         url: "URL"
         created_at: "作成日時"
