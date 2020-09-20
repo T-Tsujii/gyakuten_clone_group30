@@ -1,6 +1,6 @@
 EMAIL = 'test@example.com'
 PASSWORD = 'password'
-ADMIN_EMAIL = 'test@example.com'
+ADMIN_EMAIL = 'admin@example.com'
 ADMIN_PASSWORD = 'password'
 
 #テストユーザ存在しない場合のみ作成
