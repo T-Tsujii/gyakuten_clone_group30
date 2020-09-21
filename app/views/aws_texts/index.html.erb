@@ -9,13 +9,13 @@
         <th>内容</th>
         </tr>
       </thead>
-      <% @aws_texts.each.with_index(1) do |aws_text,i| %>
-        <thead class="text-primary">
+      <tbody>
+        <% @aws_texts.each.with_index(1) do |aws_text,i| %>
           <tr>
           <th><%= i%></th>
-          <th><%= aws_text.title %></th>
+          <th class="text-primary"><%= aws_text.title %></th>
           </tr>
-        </thead>
-      <% end %>
+        <% end %>
+      </tbody>
   </table>
 </div>
