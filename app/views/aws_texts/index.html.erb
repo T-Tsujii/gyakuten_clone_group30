@@ -6,8 +6,9 @@
       <thead class="text-white bg-primary">
         <tr>
         <th>No</th>
-        <th>内容</th>
+        <th><%= "内容" %></th>
         </tr>
+        <th><%= link_to "詳細", aws_texts_path %></th>
       </thead>
       <tbody>
         <% @aws_texts.each.with_index(1) do |aws_text,i| %>

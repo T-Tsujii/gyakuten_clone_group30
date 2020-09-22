@@ -38,3 +38,6 @@ gem 'devise-i18n'
 
 gem 'devise-bootstrap-views'
 gem 'kaminari'
+
+gem 'redcarpet', '~> 2.3.0'
+gem 'coderay'
