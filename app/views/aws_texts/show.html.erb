@@ -1,8 +1,10 @@
+<h1>詳細</h1>
+<p>タイトル <%= @aws_text.title %></p>
+
 <%
   text =<<~TEXT
-    # 大見出し
-    ## 中見出し
-    ### 小見出し
+    ### 内容 
   TEXT
  %>
+ 
 <%= markdown(text).html_safe %>

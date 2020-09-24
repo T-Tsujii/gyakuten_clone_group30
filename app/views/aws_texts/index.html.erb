@@ -8,13 +8,12 @@
         <th>No</th>
         <th><%= "内容" %></th>
         </tr>
-        <th><%= link_to "詳細", aws_texts_path %></th>
       </thead>
       <tbody>
         <% @aws_texts.each.with_index(1) do |aws_text,i| %>
           <tr>
-          <th><%= i%></th>
-          <th class="text-primary"><%= aws_text.title %></th>
+          <th><%= i %></th>
+          <th><%= link_to aws_text.title, aws_text %></th>
           </tr>
         <% end %>
       </tbody>
