@@ -1,10 +1,4 @@
 <h1>詳細</h1>
 <p>タイトル <%= @aws_text.title %></p>
 
-<%
-  text =<<~TEXT
-    ### 内容 
-  TEXT
- %>
- 
 <%= markdown(@aws_text.content).html_safe %>
