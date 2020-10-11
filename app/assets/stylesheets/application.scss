@@ -8,6 +8,7 @@
 
 body {
   padding-top: 56px;
+  padding-bottom: 60px;
 }
 
 .alert-notice {
@@ -26,4 +27,8 @@ body {
 
 .pagination {
   justify-content: center;
+}
+
+.footer-text {
+  font-size: 1.2rem;
 }
