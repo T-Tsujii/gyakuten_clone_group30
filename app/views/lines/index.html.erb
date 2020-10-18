@@ -1,17 +1,25 @@
 <div class="row">
-  <h2>LINE@</h2>
-  <table>
-    <tr>
-      <th>No.</th>
-      <th>ジャンル</th>
-      <th>内容</th>
-    </tr>
-    <% @lines.each do |line| %>
-      <tr>
-        <th><%= line.id %></th>
-        <th><%= line.genre %></th>
-        <th><%= line.title %></th>
-      </tr>
-    <% end %>
-  </table>
+  <div class="mx-auto">
+    <h2 class="text-center text-success">LINE@</h2>
+    <table class="table table-striped" style="font-size: 15pt;">
+      <thead class="bg-success text-white">
+        <tr>
+          <th>No.</th>
+          <th>ジャンル</th>
+          <th>内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @lines.each do |line| %>
+          <tr>
+            <td><%= line.id %></td>
+            <td><%= line.genre %></td>
+            <td>
+              <%= link_to line.title, lines_path(line) %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>
