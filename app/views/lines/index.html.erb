@@ -1,16 +1,17 @@
-<h2>LINE@</h2>
-
-<table>
-  <tr>
-    <th>No.</th>
-    <th>ジャンル</th>
-    <th>内容</th>
-  </tr>
-  <% @lines.each do |line| %>
+<div class="row">
+  <h2>LINE@</h2>
+  <table>
     <tr>
-      <th><%= line.id %></th>
-      <th><%= line.genre %></th>
-      <th><%= line.title %></th>
+      <th>No.</th>
+      <th>ジャンル</th>
+      <th>内容</th>
     </tr>
-  <% end %>
-</table>
+    <% @lines.each do |line| %>
+      <tr>
+        <th><%= line.id %></th>
+        <th><%= line.genre %></th>
+        <th><%= line.title %></th>
+      </tr>
+    <% end %>
+  </table>
+</div>

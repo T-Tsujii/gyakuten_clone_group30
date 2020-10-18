@@ -11,6 +11,10 @@ body {
   padding-bottom: 60px;
 }
 
+.row {
+  padding-top: 100px;
+}
+
 .alert-notice {
   @extend .alert-info;
 }
