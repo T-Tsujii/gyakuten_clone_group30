@@ -20,7 +20,7 @@
       <%= link_to "ライティング講座", "#", class: "nav-item nav-link active"%>
       <%= link_to "マネタイズ講座", "#", class: "nav-item nav-link active"%>
       <%= link_to "PHP", "#", class: "nav-item nav-link active"%>
-      <%= link_to "LINE＠", "#", class: "nav-item nav-link active"%>
+      <%= link_to "LINE＠", lines_path, class: "nav-item nav-link active"%>
       <% if user_signed_in? %>
         <%= link_to "アカウント編集", "#", class: "nav-item nav-link active"%>
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-item nav-link active" %>

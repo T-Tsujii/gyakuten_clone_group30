@@ -11,6 +11,10 @@ body {
   padding-bottom: 60px;
 }
 
+.local-container {
+  padding-top: 100px;
+}
+
 .alert-notice {
   @extend .alert-info;
 }
