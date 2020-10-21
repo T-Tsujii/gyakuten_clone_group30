@@ -4,12 +4,12 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    Question.create
+    Question.create!(question_params)
     redirect_to new_question_path
   end
 
   private
-  def user_params
+  def question_params
     params.require(:question).permit(:title, :detail)
   end
 
