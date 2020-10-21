@@ -19,4 +19,13 @@ namespace :import_csv do
     puts "インポート完了!!"
   end
 
+  #rake import_csv:line
+  desc "line_data.csvをインポートするタスク"
+
+  task lines: :environment do
+    list = Import.csv_data(path: "db/csv_data/line_data.csv")
+    Line.create!(list)
+    puts "line_dataインポート完了"
+  end
+
 end
