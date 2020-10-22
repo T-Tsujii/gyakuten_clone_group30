@@ -13,6 +13,7 @@ namespace :import_csv do
   desc "movie_data.csv をインポートするタスク"
 
   task movies: :environment do
+    Movie.destroy_all
     list = Import.csv_data(path: "db/csv_data/movie_data.csv")
     Movie.create!(list)
     puts "インポート完了!!"
