@@ -9,9 +9,9 @@
         <%= link_to "Rails", "#",  class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLinkRails", role: "button", data: { toggle: "dropdown" }, aria: { haspopup: "true", expanded: "false" } %>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkRails">
             <%= link_to "Ruby/Rails", "#",  class: "dropdown-item" %>
-            <%= link_to "動画教材", "/",  class: "dropdown-item" %>
+            <%= link_to "動画教材", movies_path,  class: "dropdown-item" %>
             <%= link_to "AWS講座", "/aws_texts" ,  class: "dropdown-item" %>
-            <%= link_to "ライブコーディング", "#",  class: "dropdown-item" %>
+            <%= link_to "ライブコーディング", movies_path(genre: "Live"),  class: "dropdown-item" %>
             <%= link_to "質問集", new_question_path,  class: "dropdown-item" %>
           </div>
       </div>
