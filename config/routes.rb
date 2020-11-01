@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources 'questions'
   resources 'lines', only: [:index]
   resources 'lives', only:[:index]
+  resources 'movies', only:[:index]
 end
