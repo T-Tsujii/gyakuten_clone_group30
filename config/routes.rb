@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   resources 'aws_texts' , only:[:index, :show]
   resources 'questions'
   resources 'lines', only: [:index]
-  resources 'lives', only:[:index]
   resources 'movies', only:[:index]
 end
