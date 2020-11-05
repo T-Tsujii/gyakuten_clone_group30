@@ -28,12 +28,12 @@ namespace :import_csv do
     puts "line_dataインポート完了"
   end
 
-  #rake import_csv:rails_texts
+  #rake import_csv:texts
   desc "text_data.csvをインポートするタスク"
 
-  task rails_texts: :environment do
+  task texts: :environment do
     list = Import.csv_data(path: "db/csv_data/text_data.csv")
-    RailsText.create!(list)
+    Text.create!(list)
     puts "text_dataインポート完了"
   end
 end
