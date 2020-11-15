@@ -13,4 +13,13 @@
       <%= form.submit "送信", class: "btn btn-primary btn-block" %> 
     </div>
   <% end %>
+  <% @questions.each do |question| %>
+    <tr>
+      <td><%= question.title %></td>
+      <td><%= question.detail %></td>
+      <td>
+        <%= link_to question.title, questions_path(question) %>
+      </td>
+    </tr>
+  <% end %>
 </div>
