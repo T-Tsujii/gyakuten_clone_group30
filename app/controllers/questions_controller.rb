@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
 
   def create
     Question.create!(question_params)
-    redirect_to new_question_path
+    redirect_to questions_path
   end
 
   private
