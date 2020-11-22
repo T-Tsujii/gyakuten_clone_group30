@@ -14,7 +14,7 @@
     </div>
   <% end %>
   <% @questions.each do |question| %>
-    <a href="/questions/1">
+    <%= link_to question do %>
       <div class="row question-wrapper">
         <div class="col-md-7 question-title">
           <%= question.title %>
@@ -23,6 +23,6 @@
           <%= question.date %>
         </div> 
       </div>
-    </a> 
+    <% end %> 
   <% end %>
 </div>
