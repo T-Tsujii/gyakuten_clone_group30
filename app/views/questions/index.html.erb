@@ -15,14 +15,16 @@
   <% end %>
   <% @questions.each do |question| %>
     <%= link_to question do %>
-      <div class="row question-wrapper">
-        <div class="col-md-7 question-title">
-          <%= question.title %>
+      <div style="padding: 30px; margin-bottom: 10px; margin-top: 10px; border: 2px solid #333333; border-radius: 10px;">
+        <div class="row question-wrapper">
+          <div class="col-md-7 question-title">
+            <h2><%= question.title %></h2>
+          </div>
+          <div class="col-md-5 question-date">
+            <p>質問日  <%= l question.created_at, format: :short %></p>
+          </div> 
         </div>
-        <div class="col-md-5 question-date">
-          <%= question.date %>
-        </div> 
       </div>
     <% end %> 
   <% end %>
-</div>
+</div> 
